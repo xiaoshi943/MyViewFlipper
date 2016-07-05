@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff7f7f7"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/hotelorder_success_hongbao_sendfriend"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true" >
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hongbao_send_bg_normal_btn" />
+   		 <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="25dp">
+
+            <TextView
+                android:id="@+id/hotelorder_success_hongbao_sendfriend_showinfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="领红包"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hotelorder_success_hongbao_sendfriend_showinfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/hotelorder_success_hongbao_sendfriend_showinfo1"
+                android:layout_centerHorizontal="true"
+                android:text="戳我"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/hotelorder_success_hongbao_sendfriend_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/hongbao_send_flag_btn" />
+    </FrameLayout>
+</RelativeLayout>

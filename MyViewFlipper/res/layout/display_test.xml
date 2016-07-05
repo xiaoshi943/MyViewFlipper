@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:uview="http://schemas.android.com/apk/res/com.example.myviewflipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/dispaly_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+        
+     <View
+         android:id="@+id/dotted"
+         style="@style/hotel_common_dotted_line"
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:layout_margin="5dp"/>
+     
+    <TextView 
+        android:id="@+id/dispaly_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/dispaly_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <com.widget.ImageTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        uview:Oriental="Vertical"
+        uview:Text="测试"
+        uview:Src="@drawable/hongbao_send_bg_normal_btn"/>
+    
+    <Button  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myelong_invoice_btn_selector"
+        android:text="sdafdasdfasfdas"
+        android:textColor="@drawable/myelong_invoice_btn_textcolor_selector"/>
+    
+
+</LinearLayout>
