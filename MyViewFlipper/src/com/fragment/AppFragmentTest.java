@@ -38,5 +38,7 @@ public class AppFragmentTest extends Activity{
 		content = content.replaceAll("\\\\n", "\n");
 		TextView tv = (TextView) findViewById(R.id.text);
 		tv.setText(content);
+		
+		//测试checkout
 	}
 }
