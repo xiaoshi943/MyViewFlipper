@@ -32,6 +32,8 @@ public class AppFragmentTest extends Activity{
 		dialog.setMessage("可否？"+version);
 		dialog.create().show();
 		
+		//gggadfa
+		
 		/*fragmentList = new ArrayList<Fragment>();
 		fragmentList.add(new FragmentOne());
 		fragmentList.add(new FragmentTwo());
