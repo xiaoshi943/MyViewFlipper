@@ -41,5 +41,6 @@ public class AppFragmentTest extends Activity{
 		
 		//测试checkout
 		//一样一样
+		//冲突
 	}
 }

@@ -51,13 +51,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int hongbao_send_bg_normal_btn=0x7f020000;
         public static final int hongbao_send_flag_btn=0x7f020001;
         public static final int hotel_dotted_line=0x7f020002;
-        public static final int hotel_myelong_invoice_btn_blue_shape=0x7f020003;
-        public static final int hotel_myelong_invoice_btn_common_shape=0x7f020004;
+        public static final int hotel_invoice_btn_blue_shape=0x7f020003;
+        public static final int hotel_invoice_btn_common_shape=0x7f020004;
         public static final int hotel_special_new_bg=0x7f020005;
         public static final int ic_action_search=0x7f020006;
         public static final int ic_launcher=0x7f020007;
-        public static final int myelong_invoice_btn_selector=0x7f020008;
-        public static final int myelong_invoice_btn_textcolor_selector=0x7f020009;
+        public static final int invoice_btn_selector=0x7f020008;
+        public static final int invoice_btn_textcolor_selector=0x7f020009;
         public static final int page00=0x7f02000a;
         public static final int page01=0x7f02000b;
         public static final int s1=0x7f02000c;
