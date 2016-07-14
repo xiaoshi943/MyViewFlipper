@@ -19,6 +19,8 @@ public class AppFragmentTest extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pageview_main);
 		
+		//gggadfa
+		
 		/*fragmentList = new ArrayList<Fragment>();
 		fragmentList.add(new FragmentOne());
 		fragmentList.add(new FragmentTwo());
