@@ -2,9 +2,9 @@ package com.fragment;
 
 import java.util.List;
 
-import org.json.JSONArray;
-
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -18,6 +18,11 @@ public class AppFragmentTest extends Activity{
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pageview_main);
+		
+		AlertDialog.Builder dialog = new Builder(this);
+		dialog.setTitle("试试");
+		dialog.setMessage("可否？");
+		dialog.create().show();
 		
 		/*fragmentList = new ArrayList<Fragment>();
 		fragmentList.add(new FragmentOne());
