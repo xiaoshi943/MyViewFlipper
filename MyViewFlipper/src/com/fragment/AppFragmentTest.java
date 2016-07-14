@@ -40,5 +40,6 @@ public class AppFragmentTest extends Activity{
 		tv.setText(content);
 		
 		//测试checkout
+		//一样一样
 	}
 }
