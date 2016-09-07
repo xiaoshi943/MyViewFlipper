@@ -1,0 +1,13 @@
+/gen
+/bin
+/build
+/build.gradle
+/project.properties
+/pkgPlugin.sh
+/.classpath
+gen/
+bin/
+build/
+project.properties
+pkgplguin.sh
+.classpath
