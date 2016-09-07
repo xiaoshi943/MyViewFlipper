@@ -34,6 +34,8 @@ public class AppFragmentTest extends Activity{
 		
 		//gggadfa
 		
+		//gggadfa
+		
 		/*fragmentList = new ArrayList<Fragment>();
 		fragmentList.add(new FragmentOne());
 		fragmentList.add(new FragmentTwo());
