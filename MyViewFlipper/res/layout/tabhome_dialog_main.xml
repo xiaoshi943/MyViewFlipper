@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="#bf000000">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:orientation="vertical"
+    	android:layout_marginLeft="27dp"
+    	android:layout_marginRight="27dp">
+    	
+        <!-- top -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="0dp">
+    		
+    		<LinearLayout 
+    		    android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:orientation="vertical"
+    			android:background="@drawable/tabhome_dialog_top_shape"
+    			android:layout_marginTop="40dp">
+    			<TextView 
+    			    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="center_horizontal"
+    				android:paddingTop="50dp"
+    				android:paddingBottom="10dp"
+    				android:gravity="center"
+    				android:textSize="18sp"
+    				android:textColor="#666666"
+    				android:text="发现新版本"/>
+    			
+    		    <ImageView 
+	    		    android:layout_width="match_parent"
+	    			android:layout_height="wrap_content"
+	    			android:src="@drawable/moon"
+	    			android:scaleType="centerCrop"
+	    			android:layout_gravity="bottom|center_horizontal"/>
+    		</LinearLayout>
+    		
+    		<ImageView 
+    		    android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:src="@drawable/rocket"
+    			android:layout_alignParentTop="true"
+    			android:layout_centerHorizontal="true"/>
+    		
+    		<!-- close button -->
+    		<ImageView 
+    		    android:id="@+id/tabhome_dialog_close"
+    		    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:src="@drawable/close"
+    			android:layout_marginTop="6dp"
+    			android:layout_alignParentRight="true"/>
+            
+        </RelativeLayout>
+        
+        <!-- bottom -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_marginTop="0dp"
+    		android:background="@drawable/tabhome_dialog_bottom_shape">
+    		
+             <LinearLayout 
+	            android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="vertical">
+            <com.dialog.LimitMaxHeightListView
+                android:id="@+id/tabhome_dialog_list"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:textSize="14sp"
+    			android:textColor="#333333"
+    			android:divider="#ffffff"
+    			android:dividerHeight="0dp"
+    			android:scrollbarFadeDuration="0"
+       			android:fadeScrollbars="false"
+    			maxHeight="450"/>
+            
+             <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="8dp"
+	            android:layout_marginTop="-5dp"
+	            android:background="@drawable/tabhome_dialog_shadow"/>
+             
+             </LinearLayout>
+            <Button 
+                android:id="@+id/tabhome_dialog_upgrade"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center_horizontal"
+    			android:layout_marginTop="10dp"
+    			android:layout_marginBottom="20dp"
+    			android:paddingLeft="30dp"
+    			android:paddingRight="30dp"
+    			android:paddingTop="10dp"
+    			android:paddingBottom="10dp"
+    			android:background="@drawable/tabhome_dialog_button_shape"
+    			android:textColor="#ffffff"
+    			android:textSize="16sp"
+    			android:text="立即升级"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

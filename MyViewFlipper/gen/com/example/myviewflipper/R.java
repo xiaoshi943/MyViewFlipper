@@ -45,65 +45,236 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
         public static final int Text=0x7f010000;
+        /**  Text color. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int swi_textColor=0x7f01000c;
+        /**  Size of the text. Recommended dimension type for text is "sp" for scaled-pixels (example: 15sp). 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swi_textSize=0x7f01000d;
+        /**  Style (bold, italic, bolditalic) for the text. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int swi_textStyle=0x7f01000e;
+        /**  Minimum width for the switch component 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int switchMinWidth=0x7f01000a;
+        /**  Minimum space between the switch and caption text 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int switchPadding=0x7f01000b;
+        /**  Default style for the Switch widget. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int switchStyle=0x7f010003;
+        /**  TextAppearance style for text displayed on the switch thumb. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int switchTextAppearance=0x7f010009;
+        /**  Present the text in ALL CAPS. This may use a small-caps form when available. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textAllCaps=0x7f010013;
+        /**  Color of the text selection highlight. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorHighlight=0x7f010010;
+        /**  Color of the hint text. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorHint=0x7f010011;
+        /**  Color of the links. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorLink=0x7f010012;
+        /**  Text to use when the switch is in the unchecked/"off" state. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textOff=0x7f010007;
+        /**  Text to use when the switch is in the checked/"on" state. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textOn=0x7f010006;
+        /**  Drawable to use as the "thumb" that switches back and forth. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int thumb=0x7f010004;
+        /**  Amount of padding on either side of text within the switch thumb. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int thumbTextPadding=0x7f010008;
+        /**  Drawable to use as the "track" that the switch thumb slides within. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int track=0x7f010005;
+        /**  Typeface (normal, sans, serif, monospace) for the text. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>sans</code></td><td>1</td><td></td></tr>
+<tr><td><code>serif</code></td><td>2</td><td></td></tr>
+<tr><td><code>monospace</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int typeface=0x7f01000f;
     }
     public static final class drawable {
-        public static final int gray=0x7f020013;
-        public static final int hongbao_send_bg_normal_btn=0x7f020000;
-        public static final int hongbao_send_flag_btn=0x7f020001;
-        public static final int hotel_dotted_line=0x7f020002;
-        public static final int hotel_invoice_btn_blue_shape=0x7f020003;
-        public static final int hotel_invoice_btn_common_shape=0x7f020004;
-        public static final int hotel_special_new_bg=0x7f020005;
-        public static final int ic_action_search=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int invoice_btn_selector=0x7f020008;
-        public static final int invoice_btn_textcolor_selector=0x7f020009;
-        public static final int page00=0x7f02000a;
-        public static final int page01=0x7f02000b;
-        public static final int s1=0x7f02000c;
-        public static final int s2=0x7f02000d;
-        public static final int s3=0x7f02000e;
-        public static final int s4=0x7f02000f;
-        public static final int s5=0x7f020010;
-        public static final int s6=0x7f020011;
-        public static final int scrollbar_bg=0x7f020012;
-        public static final int whit=0x7f020014;
+        public static final int close=0x7f020000;
+        public static final int gray=0x7f020020;
+        public static final int hongbao_send_bg_normal_btn=0x7f020001;
+        public static final int hongbao_send_flag_btn=0x7f020002;
+        public static final int hotel_dotted_line=0x7f020003;
+        public static final int hotel_invoice_btn_blue_shape=0x7f020004;
+        public static final int hotel_invoice_btn_common_shape=0x7f020005;
+        public static final int hotel_special_new_bg=0x7f020006;
+        public static final int ic_action_search=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int invoice_btn_selector=0x7f020009;
+        public static final int invoice_btn_textcolor_selector=0x7f02000a;
+        public static final int invoice_switch_inner=0x7f02000b;
+        public static final int invoice_switch_thumb=0x7f02000c;
+        public static final int invoice_switch_track=0x7f02000d;
+        public static final int invoice_switch_track_off=0x7f02000e;
+        public static final int invoice_switch_track_on=0x7f02000f;
+        public static final int moon=0x7f020010;
+        public static final int page00=0x7f020011;
+        public static final int page01=0x7f020012;
+        public static final int rocket=0x7f020013;
+        public static final int s1=0x7f020014;
+        public static final int s2=0x7f020015;
+        public static final int s3=0x7f020016;
+        public static final int s4=0x7f020017;
+        public static final int s5=0x7f020018;
+        public static final int s6=0x7f020019;
+        public static final int scrollbar_bg=0x7f02001a;
+        public static final int tabhome_dialog__shadow=0x7f02001b;
+        public static final int tabhome_dialog_bottom_shape=0x7f02001c;
+        public static final int tabhome_dialog_button_shape=0x7f02001d;
+        public static final int tabhome_dialog_shadow=0x7f02001e;
+        public static final int tabhome_dialog_top_shape=0x7f02001f;
+        public static final int whit=0x7f020021;
     }
     public static final class id {
-        public static final int Horizontal=0x7f050000;
-        public static final int Vertical=0x7f050001;
-        public static final int dispaly_1=0x7f05000e;
-        public static final int dispaly_2=0x7f050010;
-        public static final int dispaly_3=0x7f050011;
-        public static final int dotted=0x7f05000f;
-        public static final int fragment_layout=0x7f05001e;
-        public static final int hotel_listeitem_memberbargain=0x7f050017;
-        public static final int hotelbook_list_foot=0x7f050013;
-        public static final int hotelbook_list_name=0x7f050014;
-        public static final int hotelbook_listview=0x7f050012;
-        public static final int hotelorder_success_hongbao_sendfriend=0x7f05000a;
-        public static final int hotelorder_success_hongbao_sendfriend_flag=0x7f05000d;
-        public static final int hotelorder_success_hongbao_sendfriend_showinfo1=0x7f05000b;
-        public static final int hotelorder_success_hongbao_sendfriend_showinfo2=0x7f05000c;
-        public static final int image=0x7f050020;
-        public static final int imageView1=0x7f050003;
-        public static final int imageView2=0x7f050004;
-        public static final int imageView3=0x7f050005;
-        public static final int imageView4=0x7f050006;
-        public static final int imageView5=0x7f050007;
-        public static final int imageView6=0x7f050008;
-        public static final int linearLayout=0x7f050009;
-        public static final int listtest_gridview=0x7f050016;
-        public static final int listtest_listview=0x7f050015;
-        public static final int menu_settings=0x7f050021;
-        public static final int nation_selected__key=0x7f05001a;
-        public static final int nation_selected_item=0x7f05001d;
-        public static final int nation_selected_item_name=0x7f05001b;
-        public static final int nation_selected_item_tag=0x7f05001c;
-        public static final int nation_selected_listview=0x7f050018;
-        public static final int nation_selected_sidebar=0x7f050019;
-        public static final int text=0x7f05001f;
-        public static final int viewFlipper1=0x7f050002;
+        public static final int Horizontal=0x7f080000;
+        public static final int Vertical=0x7f080001;
+        public static final int bold=0x7f080002;
+        public static final int dispaly_1=0x7f080014;
+        public static final int dispaly_2=0x7f080016;
+        public static final int dispaly_3=0x7f080017;
+        public static final int dotted=0x7f080015;
+        public static final int fragment1_text=0x7f080018;
+        public static final int fragment_layout=0x7f080026;
+        public static final int hotel_listeitem_memberbargain=0x7f08001e;
+        public static final int hotel_order_needinvoice=0x7f080025;
+        public static final int hotelbook_list_foot=0x7f08001a;
+        public static final int hotelbook_list_name=0x7f08001b;
+        public static final int hotelbook_listview=0x7f080019;
+        public static final int hotelorder_success_hongbao_sendfriend=0x7f080010;
+        public static final int hotelorder_success_hongbao_sendfriend_flag=0x7f080013;
+        public static final int hotelorder_success_hongbao_sendfriend_showinfo1=0x7f080011;
+        public static final int hotelorder_success_hongbao_sendfriend_showinfo2=0x7f080012;
+        public static final int image=0x7f080028;
+        public static final int imageView1=0x7f080009;
+        public static final int imageView2=0x7f08000a;
+        public static final int imageView3=0x7f08000b;
+        public static final int imageView4=0x7f08000c;
+        public static final int imageView5=0x7f08000d;
+        public static final int imageView6=0x7f08000e;
+        public static final int italic=0x7f080003;
+        public static final int linearLayout=0x7f08000f;
+        public static final int listtest_gridview=0x7f08001d;
+        public static final int listtest_listview=0x7f08001c;
+        public static final int menu_settings=0x7f08002d;
+        public static final int monospace=0x7f080005;
+        public static final int nation_selected__key=0x7f080021;
+        public static final int nation_selected_item=0x7f080024;
+        public static final int nation_selected_item_name=0x7f080022;
+        public static final int nation_selected_item_tag=0x7f080023;
+        public static final int nation_selected_listview=0x7f08001f;
+        public static final int nation_selected_sidebar=0x7f080020;
+        public static final int normal=0x7f080004;
+        public static final int sans=0x7f080006;
+        public static final int serif=0x7f080007;
+        public static final int tabhome_dialog_close=0x7f08002a;
+        public static final int tabhome_dialog_item_content=0x7f080029;
+        public static final int tabhome_dialog_list=0x7f08002b;
+        public static final int tabhome_dialog_upgrade=0x7f08002c;
+        public static final int text=0x7f080027;
+        public static final int viewFlipper1=0x7f080008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -115,28 +286,42 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int hotelbook_list_foot=0x7f030006;
         public static final int hotelbook_list_item=0x7f030007;
         public static final int layout_parameter_test=0x7f030008;
-        public static final int listtest=0x7f030009;
-        public static final int listtest_item=0x7f03000a;
-        public static final int nation_selected=0x7f03000b;
-        public static final int nation_selected_listview_item=0x7f03000c;
-        public static final int nation_selected_listview_tag=0x7f03000d;
-        public static final int pageview_main=0x7f03000e;
-        public static final int rotate_3d_animation=0x7f03000f;
+        public static final int layout_test=0x7f030009;
+        public static final int listtest=0x7f03000a;
+        public static final int listtest_item=0x7f03000b;
+        public static final int nation_selected=0x7f03000c;
+        public static final int nation_selected_listview_item=0x7f03000d;
+        public static final int nation_selected_listview_tag=0x7f03000e;
+        public static final int pageview_main=0x7f03000f;
+        public static final int rotate_3d_animation=0x7f030010;
+        public static final int tabhome_dialog_item_layout=0x7f030011;
+        public static final int tabhome_dialog_main=0x7f030012;
     }
     public static final class menu {
-        public static final int activity_main=0x7f080000;
+        public static final int activity_main=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
-        public static final int menu_settings=0x7f060002;
-        public static final int title_activity_main=0x7f060003;
+        public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050001;
+        public static final int menu_settings=0x7f050002;
+        public static final int switch_off=0x7f050005;
+        public static final int switch_on=0x7f050004;
+        public static final int title_activity_main=0x7f050003;
     }
     public static final class style {
-        public static final int AppTheme=0x7f070000;
+        public static final int AppTheme=0x7f060002;
+        public static final int Switch=0x7f060000;
+        public static final int dialog=0x7f060004;
         /**  dotted line 
          */
-        public static final int hotel_common_dotted_line=0x7f070001;
+        public static final int hotel_common_dotted_line=0x7f060003;
+        /**   <style name="Switch_style">
+        <item name="track">@drawable/switch_track</item>
+        <item name="thumb">@drawable/switch_inner</item>
+        <item name="switchPadding">16dip</item>
+    </style> 
+         */
+        public static final int invoice_switch_style=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ImageTextView.
@@ -195,5 +380,339 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.example.myviewflipper:Text
         */
         public static final int ImageTextView_Text = 0;
+        /** Attributes that can be used with a Switch.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Switch_switchMinWidth com.example.myviewflipper:switchMinWidth}</code></td><td> Minimum width for the switch component </td></tr>
+           <tr><td><code>{@link #Switch_switchPadding com.example.myviewflipper:switchPadding}</code></td><td> Minimum space between the switch and caption text </td></tr>
+           <tr><td><code>{@link #Switch_switchTextAppearance com.example.myviewflipper:switchTextAppearance}</code></td><td> TextAppearance style for text displayed on the switch thumb.</td></tr>
+           <tr><td><code>{@link #Switch_textOff com.example.myviewflipper:textOff}</code></td><td> Text to use when the switch is in the unchecked/"off" state.</td></tr>
+           <tr><td><code>{@link #Switch_textOn com.example.myviewflipper:textOn}</code></td><td> Text to use when the switch is in the checked/"on" state.</td></tr>
+           <tr><td><code>{@link #Switch_thumb com.example.myviewflipper:thumb}</code></td><td> Drawable to use as the "thumb" that switches back and forth.</td></tr>
+           <tr><td><code>{@link #Switch_thumbTextPadding com.example.myviewflipper:thumbTextPadding}</code></td><td> Amount of padding on either side of text within the switch thumb.</td></tr>
+           <tr><td><code>{@link #Switch_track com.example.myviewflipper:track}</code></td><td> Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+           </table>
+           @see #Switch_switchMinWidth
+           @see #Switch_switchPadding
+           @see #Switch_switchTextAppearance
+           @see #Switch_textOff
+           @see #Switch_textOn
+           @see #Switch_thumb
+           @see #Switch_thumbTextPadding
+           @see #Switch_track
+         */
+        public static final int[] Switch = {
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>
+          @attr description
+           Minimum width for the switch component 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:switchMinWidth
+        */
+        public static final int Switch_switchMinWidth = 6;
+        /**
+          <p>
+          @attr description
+           Minimum space between the switch and caption text 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:switchPadding
+        */
+        public static final int Switch_switchPadding = 7;
+        /**
+          <p>
+          @attr description
+           TextAppearance style for text displayed on the switch thumb. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:switchTextAppearance
+        */
+        public static final int Switch_switchTextAppearance = 5;
+        /**
+          <p>
+          @attr description
+           Text to use when the switch is in the unchecked/"off" state. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:textOff
+        */
+        public static final int Switch_textOff = 3;
+        /**
+          <p>
+          @attr description
+           Text to use when the switch is in the checked/"on" state. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:textOn
+        */
+        public static final int Switch_textOn = 2;
+        /**
+          <p>
+          @attr description
+           Drawable to use as the "thumb" that switches back and forth. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:thumb
+        */
+        public static final int Switch_thumb = 0;
+        /**
+          <p>
+          @attr description
+           Amount of padding on either side of text within the switch thumb. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:thumbTextPadding
+        */
+        public static final int Switch_thumbTextPadding = 4;
+        /**
+          <p>
+          @attr description
+           Drawable to use as the "track" that the switch thumb slides within. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:track
+        */
+        public static final int Switch_track = 1;
+        /** Attributes that can be used with a Switch_Style.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Switch_Style_switchStyle com.example.myviewflipper:switchStyle}</code></td><td> Default style for the Switch widget.</td></tr>
+           </table>
+           @see #Switch_Style_switchStyle
+         */
+        public static final int[] Switch_Style = {
+            0x7f010003
+        };
+        /**
+          <p>
+          @attr description
+           Default style for the Switch widget. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:switchStyle
+        */
+        public static final int Switch_Style_switchStyle = 0;
+        /** Attributes that can be used with a TextAppearance.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TextAppearance_swi_textColor com.example.myviewflipper:swi_textColor}</code></td><td> Text color.</td></tr>
+           <tr><td><code>{@link #TextAppearance_swi_textSize com.example.myviewflipper:swi_textSize}</code></td><td> Size of the text.</td></tr>
+           <tr><td><code>{@link #TextAppearance_swi_textStyle com.example.myviewflipper:swi_textStyle}</code></td><td> Style (bold, italic, bolditalic) for the text.</td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.example.myviewflipper:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           <tr><td><code>{@link #TextAppearance_textColorHighlight com.example.myviewflipper:textColorHighlight}</code></td><td> Color of the text selection highlight.</td></tr>
+           <tr><td><code>{@link #TextAppearance_textColorHint com.example.myviewflipper:textColorHint}</code></td><td> Color of the hint text.</td></tr>
+           <tr><td><code>{@link #TextAppearance_textColorLink com.example.myviewflipper:textColorLink}</code></td><td> Color of the links.</td></tr>
+           <tr><td><code>{@link #TextAppearance_typeface com.example.myviewflipper:typeface}</code></td><td> Typeface (normal, sans, serif, monospace) for the text.</td></tr>
+           </table>
+           @see #TextAppearance_swi_textColor
+           @see #TextAppearance_swi_textSize
+           @see #TextAppearance_swi_textStyle
+           @see #TextAppearance_textAllCaps
+           @see #TextAppearance_textColorHighlight
+           @see #TextAppearance_textColorHint
+           @see #TextAppearance_textColorLink
+           @see #TextAppearance_typeface
+         */
+        public static final int[] TextAppearance = {
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013
+        };
+        /**
+          <p>
+          @attr description
+           Text color. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:swi_textColor
+        */
+        public static final int TextAppearance_swi_textColor = 0;
+        /**
+          <p>
+          @attr description
+           Size of the text. Recommended dimension type for text is "sp" for scaled-pixels (example: 15sp). 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:swi_textSize
+        */
+        public static final int TextAppearance_swi_textSize = 1;
+        /**
+          <p>
+          @attr description
+           Style (bold, italic, bolditalic) for the text. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:swi_textStyle
+        */
+        public static final int TextAppearance_swi_textStyle = 2;
+        /**
+          <p>
+          @attr description
+           Present the text in ALL CAPS. This may use a small-caps form when available. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:textAllCaps
+        */
+        public static final int TextAppearance_textAllCaps = 7;
+        /**
+          <p>
+          @attr description
+           Color of the text selection highlight. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:textColorHighlight
+        */
+        public static final int TextAppearance_textColorHighlight = 4;
+        /**
+          <p>
+          @attr description
+           Color of the hint text. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:textColorHint
+        */
+        public static final int TextAppearance_textColorHint = 5;
+        /**
+          <p>
+          @attr description
+           Color of the links. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:textColorLink
+        */
+        public static final int TextAppearance_textColorLink = 6;
+        /**
+          <p>
+          @attr description
+           Typeface (normal, sans, serif, monospace) for the text. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>sans</code></td><td>1</td><td></td></tr>
+<tr><td><code>serif</code></td><td>2</td><td></td></tr>
+<tr><td><code>monospace</code></td><td>3</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.example.myviewflipper:typeface
+        */
+        public static final int TextAppearance_typeface = 3;
     };
 }

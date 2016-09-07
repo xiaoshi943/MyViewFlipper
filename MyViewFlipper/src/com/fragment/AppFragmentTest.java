@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Fragment;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -18,10 +19,17 @@ public class AppFragmentTest extends Activity{
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pageview_main);
+		int version=0;
+		try {
+			String packageName = getPackageName();
+			version = getPackageManager().getPackageInfo(packageName, 0).versionCode;
+		} catch (NameNotFoundException e) {
+			e.printStackTrace();
+		}
 		
 		AlertDialog.Builder dialog = new Builder(this);
 		dialog.setTitle("试试");
-		dialog.setMessage("可否？");
+		dialog.setMessage("可否？"+version);
 		dialog.create().show();
 		
 		/*fragmentList = new ArrayList<Fragment>();

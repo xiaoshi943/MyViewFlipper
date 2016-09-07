@@ -1,7 +1,6 @@
 package com.nationselected;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import android.app.Activity;

@@ -20,10 +20,15 @@ public class ListTest extends Activity{
 		String[] arr = {"aaaa","aaaa","aaaa","aaaa","aaaa","aaaa","aaaa","aaaa","aaaa"
 				,"aaaa","aaaa","aaaa","aaaa","aaaa","aaaa"};
 		
-		gridView = (GridView)findViewById(R.id.listtest_gridview);
+		/*String[] arr = {};*/
+		
 				
 				
+		horizontalListView.setSelection(1);
+		
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.listtest_item,arr);
 		horizontalListView.setAdapter(adapter);
+		
+		gridView = (GridView)findViewById(R.id.listtest_gridview);
 	}
 }

@@ -3,6 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <com.widget.SwitchButton
+        xmlns:zapp="http://schemas.android.com/apk/res/com.dp.android.elong.widget"
+        android:id="@+id/hotel_order_needinvoice"
+        style="@style/invoice_switch_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:clickable="true" />
 
    <!--  <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

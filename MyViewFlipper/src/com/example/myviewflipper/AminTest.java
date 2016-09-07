@@ -16,6 +16,12 @@ public class AminTest extends Activity{
 	private ImageView hotelorder_success_hongbao_sendfriend_flag;
 	private TextView test3;
 	
+//	int a[] = new int[100];
+//	int aa[] = {1,2};
+//	int aaa[] = new int[]{1,2};
+//	int aaaa[];
+	
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -60,4 +66,5 @@ public class AminTest extends Activity{
 			}
 		};
 	};
+	
 }

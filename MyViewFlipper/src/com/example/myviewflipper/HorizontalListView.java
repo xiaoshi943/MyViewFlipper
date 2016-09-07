@@ -3,7 +3,6 @@ package com.example.myviewflipper;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import android.app.ActionBar.LayoutParams;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.graphics.Rect;
@@ -12,11 +11,7 @@ import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.MeasureSpec;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ListAdapter;
 import android.widget.Scroller;
 

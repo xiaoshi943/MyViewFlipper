@@ -2,11 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#BF000000">
     
     <TextView 
+        android:id="@+id/fragment1_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="fragment1"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hongbao_send_flag_btn"/>
 
 </LinearLayout>
